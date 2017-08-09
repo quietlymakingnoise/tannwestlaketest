@@ -1,0 +1,260 @@
+/* General */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button-green {
+  border-radius: 100px;
+  text-transform: uppercase;
+  padding: 10px;
+  background: black;
+  border-style: none;
+  color: white;
+}
+
+/* Topnav */
+
+.top-nav {
+  background: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav a {
+  float: right;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 1em;
+    outline: 0;
+}
+
+.top-nav .icon {
+  display: none;
+}
+
+/* Landing Page */
+
+#landing-page {
+  background: linear-gradient(to right,#40A2F9, #0CEAFD);
+  height: 100vh;
+}
+
+#landing-page h1,p {
+  color: white;
+}
+
+#landing-page p {
+  font-size: 1.5em;
+}
+
+#hero-container {
+  /* Flexbox used due to time contraints,
+  need to add fallback for older browsers */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 10%;
+  align-items: center;
+}
+
+#hero-left {
+  margin-right: auto;
+  float: left;
+  width: 45%;
+}
+
+#hero-right img {
+  width: 100%;
+  background: green;
+}
+
+#hero-right {
+  float: right;
+  width: 45%;
+}
+
+/* Which to buy */
+
+#which-to-buy {
+  margin-top: -220px;
+
+}
+
+#which-to-buy p {
+  font-size: 1em;
+}
+
+
+#which-to-buy h2 {
+  font-size: 1.2em;
+}
+
+ h1 {
+  color: white;
+  padding-top: 5%;
+
+}
+
+.three-column-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  float: left;
+}
+
+.grid-item {
+  text-align: center;
+  width: 30%;
+  margin: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.grid-item .button-green {
+  background: #31BB67;
+  font-size: 0.7em;
+  padding: 10px 30px;
+  margin: 20px;
+}
+
+.grid-item h2 {
+  color: #40A2F9;
+}
+
+.grid-item p {
+    color: grey;
+}
+
+
+#questions {
+  width: 100%;
+  float: left
+}
+
+.bottom {
+  padding-top: 50px;
+  box-shadow: none;
+  color: #40A2F9;
+}
+
+.bottom h2 {
+  padding-top: 50px;
+  box-shadow: none;
+  color: black;
+}
+
+#questions {
+  background: linear-gradient(to right,#22293B, #2B3648);
+  margin-top: 60px;
+  padding: 80px 0;
+  text-align: center;
+}
+#questions h2 {
+  color: #40A2F9;
+  text-align: center;
+}
+
+#questions .button-green {
+  background: #31BB67;
+  font-size: 0.7em;
+  padding: 10px 30px;
+  margin: 20px;
+}
+
+footer p {
+  text-align: left;
+  float: left;
+  color: black;
+  padding: 15px;
+}
+
+footer h3 {
+  float: right;
+  font-size: 1em;
+  padding: 10px;
+}
+
+
+/* Responsive Breakpoints */
+
+/* Mobile */
+
+@media screen and (max-width: 800px) {
+  .top-nav a:not(:last-child) {display: none;}
+  .top-nav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+
+  #which-to-buy {
+    padding-top: 280px;
+  }
+
+  #which-to-buy h1 {
+    color: black;
+    margin-top: 50px;
+  }
+
+  #hero-right {
+    width: 100%;
+    padding-top: 20px;
+  }
+  #hero-left {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  #hero-container p {
+    margin-bottom: 10vh
+  }
+
+  #hero-container .button-green {
+    margin-bottom: 15vh
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .top-nav.responsive {position: relative;}
+  .top-nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Larger Monitors */
+
+@media screen and (min-width: 1920px) {
+  #which-to-buy {
+    margin-top: -340px;
+  }
+}
